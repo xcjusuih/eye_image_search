@@ -9,6 +9,7 @@
 
 
 import sys
+import random
 from search import search
 from PyQt5 import QtCore, QtGui, QtWidgets, Qt
 from PyQt5.QtWidgets import *

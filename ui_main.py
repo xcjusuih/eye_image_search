@@ -401,7 +401,7 @@ class Ui_MainWindow(object):
         self.pageNumber.setText(str(self.currentPageNum) + ' / ' + str(self.totalPageNum))
 
     def search(self):
-        self.resultPaths = self.searchObj.search(self.pageSpinBox.value() * 6, self.pathLabel.text())
+        self.resultPaths = self.searchObj.search(self.pageSpinBox.value() * 6, self.targetPath)
         self.resultLabel_1.setPixmap(QPixmap(self.resultPaths[0]))
         self.resultLabel_2.setPixmap(QPixmap(self.resultPaths[1]))
         self.resultLabel_3.setPixmap(QPixmap(self.resultPaths[2]))
@@ -429,6 +429,7 @@ class Ui_MainWindow(object):
             else:
                 self.setText(self.pathLabel, openfile_name[0][:30] + '...')
             self.uploadLabel.setPixmap(QPixmap(openfile_name[0]))
+            self.targetPath = openfile_name[0]
             self.searchButton.setEnabled(True)
 
     def quit(self):

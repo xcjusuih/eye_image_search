@@ -4,14 +4,14 @@ from search import search
 
 # def __init__(self):
 #     self.searchObj = search()
-#     self.bigPicPos = QRect(370, 30, 441, 441)
+#     self.bigPicPos = QRect(128, 0, 768, 768)
 #     self.fullScreenSize = QRect(0, 0, 1024, 768)
 
 #-----------------------------------------------------------------------------------------------------------------------
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_maingupsHs.ui'
+## Form generated from reading UI file 'ui_mainFuAxzE.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -25,7 +25,7 @@ from PySide2.QtWidgets import *
 
 class Ui_MainWindow(object):
     def __init__(self):
-        self.searchObj = search()
+        self.searchObj = search("F:\课件\创新实践\data.csv")
         self.bigPicPos = QRect(128, 0, 768, 768)
         self.fullScreenSize = QRect(0, 0, 1024, 768)
 
@@ -69,6 +69,9 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(237, 108, 0);\n"
 "	border-radius: 10px;\n"
+"}\n"
+"QPushButton:disabled {\n"
+"    background-color:rgb(98, 114, 164);\n"
 "}")
         self.searchButton = QPushButton(self.mainFrame)
         self.searchButton.setObjectName(u"searchButton")
@@ -83,6 +86,9 @@ class Ui_MainWindow(object):
 "	color: rgb(255, 255, 255);\n"
 "	background-color: rgb(237, 108, 0);\n"
 "	border-radius: 10px;\n"
+"}\n"
+"QPushButton:disabled {\n"
+"    background-color:rgb(98, 114, 164);\n"
 "}")
         self.uploadLabel = QLabel(self.mainFrame)
         self.uploadLabel.setObjectName(u"uploadLabel")
@@ -305,6 +311,13 @@ class Ui_MainWindow(object):
         self.searchButton.clicked.connect(self.search)
         self.nextPageButton.clicked.connect(self.nextPage)
         self.lastPageButton.clicked.connect(self.lastPage)
+        self.searchButton.setDisabled(True)
+        self.pictureLink_1.setDisabled(True)
+        self.pictureLink_2.setDisabled(True)
+        self.pictureLink_3.setDisabled(True)
+        self.pictureLink_4.setDisabled(True)
+        self.pictureLink_5.setDisabled(True)
+        self.pictureLink_6.setDisabled(True)
         self.nextPageButton.setDisabled(True)
         self.lastPageButton.setDisabled(True)
         self.pictureLink_1.clicked.connect(self.link1)
@@ -416,6 +429,7 @@ class Ui_MainWindow(object):
             else:
                 self.setText(self.pathLabel, openfile_name[0][:30] + '...')
             self.uploadLabel.setPixmap(QPixmap(openfile_name[0]))
+            self.searchButton.setEnabled(True)
 
     def quit(self):
         os._exit(0)

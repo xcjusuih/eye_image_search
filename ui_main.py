@@ -1,17 +1,10 @@
 import os
 from search import search
 
-
-# def __init__(self):
-#     self.searchObj = search()
-#     self.bigPicPos = QRect(128, 0, 768, 768)
-#     self.fullScreenSize = QRect(0, 0, 1024, 768)
-
-#-----------------------------------------------------------------------------------------------------------------------
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ui_mainFuAxzE.ui'
+## Form generated from reading UI file 'ui_maincHMquW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -32,12 +25,12 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1024, 768)
+        MainWindow.resize(1358, 830)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.mainFrame = QFrame(self.centralwidget)
         self.mainFrame.setObjectName(u"mainFrame")
-        self.mainFrame.setGeometry(QRect(10, 10, 1001, 741))
+        self.mainFrame.setGeometry(QRect(10, 10, 1291, 741))
         font = QFont()
         font.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
         font.setPointSize(10)
@@ -53,7 +46,7 @@ class Ui_MainWindow(object):
         self.mainFrame.setFrameShadow(QFrame.Raised)
         self.uploadButton = QPushButton(self.mainFrame)
         self.uploadButton.setObjectName(u"uploadButton")
-        self.uploadButton.setGeometry(QRect(30, 380, 121, 51))
+        self.uploadButton.setGeometry(QRect(320, 380, 121, 51))
         font1 = QFont()
         font1.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
         font1.setPointSize(14)
@@ -75,7 +68,7 @@ class Ui_MainWindow(object):
 "}")
         self.searchButton = QPushButton(self.mainFrame)
         self.searchButton.setObjectName(u"searchButton")
-        self.searchButton.setGeometry(QRect(160, 380, 121, 51))
+        self.searchButton.setGeometry(QRect(450, 380, 121, 51))
         self.searchButton.setFont(font1)
         self.searchButton.setStyleSheet(u"QPushButton{\n"
 "	color: rgb(255, 255, 255);\n"
@@ -92,15 +85,15 @@ class Ui_MainWindow(object):
 "}")
         self.uploadLabel = QLabel(self.mainFrame)
         self.uploadLabel.setObjectName(u"uploadLabel")
-        self.uploadLabel.setGeometry(QRect(30, 30, 251, 251))
+        self.uploadLabel.setGeometry(QRect(320, 30, 251, 251))
         self.uploadLabel.setStyleSheet(u"QLabel{\n"
 "    shadow: 0 8px 16px 0 rgba(255,255,255,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);\n"
 "}")
-        self.uploadLabel.setPixmap(QPixmap(u"ui_pics/to_be_upload.jpg"))
+        self.uploadLabel.setPixmap(QPixmap(u"../../../../UI/pictures/unnamed.jpg"))
         self.uploadLabel.setScaledContents(True)
         self.descriptions = QLabel(self.mainFrame)
         self.descriptions.setObjectName(u"descriptions")
-        self.descriptions.setGeometry(QRect(30, 450, 311, 261))
+        self.descriptions.setGeometry(QRect(30, 450, 611, 261))
         self.descriptions.setFont(font1)
         self.descriptions.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 170, 255)\n"
@@ -108,38 +101,38 @@ class Ui_MainWindow(object):
         self.descriptions.setScaledContents(False)
         self.resultLabel_1 = QLabel(self.mainFrame)
         self.resultLabel_1.setObjectName(u"resultLabel_1")
-        self.resultLabel_1.setGeometry(QRect(370, 30, 211, 211))
-        self.resultLabel_1.setPixmap(QPixmap(u"ui_pics/1.jpg"))
+        self.resultLabel_1.setGeometry(QRect(660, 30, 211, 211))
+        self.resultLabel_1.setPixmap(QPixmap(u"../../../../UI/pictures/1.jpg"))
         self.resultLabel_1.setScaledContents(True)
         self.resultLabel_3 = QLabel(self.mainFrame)
         self.resultLabel_3.setObjectName(u"resultLabel_3")
-        self.resultLabel_3.setGeometry(QRect(370, 260, 211, 211))
-        self.resultLabel_3.setPixmap(QPixmap(u"ui_pics/2.jpg"))
+        self.resultLabel_3.setGeometry(QRect(660, 260, 211, 211))
+        self.resultLabel_3.setPixmap(QPixmap(u"../../../../UI/pictures/4.jpg"))
         self.resultLabel_3.setScaledContents(True)
         self.resultLabel_5 = QLabel(self.mainFrame)
         self.resultLabel_5.setObjectName(u"resultLabel_5")
-        self.resultLabel_5.setGeometry(QRect(370, 490, 211, 211))
-        self.resultLabel_5.setPixmap(QPixmap(u"ui_pics/3.jpg"))
+        self.resultLabel_5.setGeometry(QRect(660, 490, 211, 211))
+        self.resultLabel_5.setPixmap(QPixmap(u"../../../../UI/pictures/5.jpg"))
         self.resultLabel_5.setScaledContents(True)
         self.resultLabel_4 = QLabel(self.mainFrame)
         self.resultLabel_4.setObjectName(u"resultLabel_4")
-        self.resultLabel_4.setGeometry(QRect(600, 260, 211, 211))
-        self.resultLabel_4.setPixmap(QPixmap(u"ui_pics/4.jpg"))
+        self.resultLabel_4.setGeometry(QRect(890, 260, 211, 211))
+        self.resultLabel_4.setPixmap(QPixmap(u"../../../../UI/pictures/1.png"))
         self.resultLabel_4.setScaledContents(True)
         self.resultLabel_6 = QLabel(self.mainFrame)
         self.resultLabel_6.setObjectName(u"resultLabel_6")
-        self.resultLabel_6.setGeometry(QRect(600, 490, 211, 211))
-        self.resultLabel_6.setPixmap(QPixmap(u"ui_pics/5.jpg"))
+        self.resultLabel_6.setGeometry(QRect(890, 490, 211, 211))
+        self.resultLabel_6.setPixmap(QPixmap(u"../../../../UI/pictures/3.jpg"))
         self.resultLabel_6.setScaledContents(True)
         self.resultLabel_2 = QLabel(self.mainFrame)
         self.resultLabel_2.setObjectName(u"resultLabel_2")
         self.resultLabel_2.setEnabled(True)
-        self.resultLabel_2.setGeometry(QRect(600, 30, 211, 211))
-        self.resultLabel_2.setPixmap(QPixmap(u"ui_pics/6.jpg"))
+        self.resultLabel_2.setGeometry(QRect(890, 30, 211, 211))
+        self.resultLabel_2.setPixmap(QPixmap(u"../../../../UI/pictures/2.jpg"))
         self.resultLabel_2.setScaledContents(True)
         self.lastPageButton = QPushButton(self.mainFrame)
         self.lastPageButton.setObjectName(u"lastPageButton")
-        self.lastPageButton.setGeometry(QRect(850, 260, 121, 61))
+        self.lastPageButton.setGeometry(QRect(1140, 260, 121, 61))
         font2 = QFont()
         font2.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
         font2.setPointSize(16)
@@ -162,7 +155,7 @@ class Ui_MainWindow(object):
         self.nextPageButton = QPushButton(self.mainFrame)
         self.nextPageButton.setObjectName(u"nextPageButton")
         self.nextPageButton.setEnabled(True)
-        self.nextPageButton.setGeometry(QRect(850, 420, 121, 61))
+        self.nextPageButton.setGeometry(QRect(1140, 420, 121, 61))
         self.nextPageButton.setFont(font2)
         self.nextPageButton.setStyleSheet(u"QPushButton{\n"
 "	color: rgb(255, 255, 255);\n"
@@ -179,7 +172,7 @@ class Ui_MainWindow(object):
 "}")
         self.pageNumber = QLabel(self.mainFrame)
         self.pageNumber.setObjectName(u"pageNumber")
-        self.pageNumber.setGeometry(QRect(850, 350, 111, 41))
+        self.pageNumber.setGeometry(QRect(1140, 350, 111, 41))
         font3 = QFont()
         font3.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
         font3.setPointSize(12)
@@ -193,31 +186,31 @@ class Ui_MainWindow(object):
         self.pageNumber.setAlignment(Qt.AlignCenter)
         self.pictureLink_1 = QPushButton(self.mainFrame)
         self.pictureLink_1.setObjectName(u"pictureLink_1")
-        self.pictureLink_1.setGeometry(QRect(370, 30, 211, 211))
+        self.pictureLink_1.setGeometry(QRect(660, 30, 211, 211))
         self.pictureLink_1.setFlat(True)
         self.pictureLink_2 = QPushButton(self.mainFrame)
         self.pictureLink_2.setObjectName(u"pictureLink_2")
-        self.pictureLink_2.setGeometry(QRect(600, 30, 211, 211))
+        self.pictureLink_2.setGeometry(QRect(890, 30, 211, 211))
         self.pictureLink_2.setFlat(True)
         self.pictureLink_3 = QPushButton(self.mainFrame)
         self.pictureLink_3.setObjectName(u"pictureLink_3")
-        self.pictureLink_3.setGeometry(QRect(370, 260, 211, 211))
+        self.pictureLink_3.setGeometry(QRect(660, 260, 211, 211))
         self.pictureLink_3.setFlat(True)
         self.pictureLink_4 = QPushButton(self.mainFrame)
         self.pictureLink_4.setObjectName(u"pictureLink_4")
-        self.pictureLink_4.setGeometry(QRect(600, 260, 211, 211))
+        self.pictureLink_4.setGeometry(QRect(890, 260, 211, 211))
         self.pictureLink_4.setFlat(True)
         self.pictureLink_5 = QPushButton(self.mainFrame)
         self.pictureLink_5.setObjectName(u"pictureLink_5")
-        self.pictureLink_5.setGeometry(QRect(370, 490, 211, 211))
+        self.pictureLink_5.setGeometry(QRect(660, 490, 211, 211))
         self.pictureLink_5.setFlat(True)
         self.pictureLink_6 = QPushButton(self.mainFrame)
         self.pictureLink_6.setObjectName(u"pictureLink_6")
-        self.pictureLink_6.setGeometry(QRect(600, 490, 211, 211))
+        self.pictureLink_6.setGeometry(QRect(890, 490, 211, 211))
         self.pictureLink_6.setFlat(True)
         self.quitButton = QPushButton(self.mainFrame)
         self.quitButton.setObjectName(u"quitButton")
-        self.quitButton.setGeometry(QRect(960, 0, 41, 41))
+        self.quitButton.setGeometry(QRect(1250, 0, 41, 41))
         font4 = QFont()
         font4.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
         font4.setPointSize(12)
@@ -236,7 +229,7 @@ class Ui_MainWindow(object):
 "}")
         self.creditLabel = QLabel(self.mainFrame)
         self.creditLabel.setObjectName(u"creditLabel")
-        self.creditLabel.setGeometry(QRect(890, 700, 111, 41))
+        self.creditLabel.setGeometry(QRect(1180, 700, 111, 41))
         self.creditLabel.setFont(font3)
         self.creditLabel.setStyleSheet(u"QLabel{\n"
 "	color: rgb(98, 114, 164)\n"
@@ -245,13 +238,13 @@ class Ui_MainWindow(object):
         self.creditLabel.setAlignment(Qt.AlignCenter)
         self.pathLabel = QLabel(self.mainFrame)
         self.pathLabel.setObjectName(u"pathLabel")
-        self.pathLabel.setGeometry(QRect(30, 290, 251, 21))
+        self.pathLabel.setGeometry(QRect(320, 290, 251, 21))
         font5 = QFont()
         font5.setFamily(u"\u5fae\u8f6f\u96c5\u9ed1")
         self.pathLabel.setFont(font5)
         self.pageSettingLabel = QLabel(self.mainFrame)
         self.pageSettingLabel.setObjectName(u"pageSettingLabel")
-        self.pageSettingLabel.setGeometry(QRect(50, 330, 151, 31))
+        self.pageSettingLabel.setGeometry(QRect(340, 330, 151, 31))
         self.pageSettingLabel.setFont(font1)
         self.pageSettingLabel.setStyleSheet(u"QLabel{\n"
 "	color: rgb(255, 170, 255)\n"
@@ -259,11 +252,48 @@ class Ui_MainWindow(object):
         self.pageSettingLabel.setScaledContents(False)
         self.pageSpinBox = QSpinBox(self.mainFrame)
         self.pageSpinBox.setObjectName(u"pageSpinBox")
-        self.pageSpinBox.setGeometry(QRect(210, 330, 41, 31))
+        self.pageSpinBox.setGeometry(QRect(500, 330, 41, 31))
         self.pageSpinBox.setFont(font)
         self.pageSpinBox.setMinimum(1)
         self.pageSpinBox.setMaximum(99)
         self.pageSpinBox.setValue(5)
+        self.FAuploadLabel = QLabel(self.mainFrame)
+        self.FAuploadLabel.setObjectName(u"FAuploadLabel")
+        self.FAuploadLabel.setGeometry(QRect(30, 30, 251, 251))
+        self.FAuploadLabel.setStyleSheet(u"QLabel{\n"
+"    shadow: 0 8px 16px 0 rgba(255,255,255,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);\n"
+"}")
+        self.FAuploadLabel.setPixmap(QPixmap(u"../../../../UI/pictures/unnamed.jpg"))
+        self.FAuploadLabel.setScaledContents(True)
+        self.FAuploadButton = QPushButton(self.mainFrame)
+        self.FAuploadButton.setObjectName(u"FAuploadButton")
+        self.FAuploadButton.setGeometry(QRect(20, 380, 261, 51))
+        self.FAuploadButton.setFont(font1)
+        self.FAuploadButton.setStyleSheet(u"QPushButton{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(170, 85, 255);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:hover{\n"
+"	color: rgb(255, 255, 255);\n"
+"	background-color: rgb(237, 108, 0);\n"
+"	border-radius: 10px;\n"
+"}\n"
+"QPushButton:disabled {\n"
+"    background-color:rgb(98, 114, 164);\n"
+"}")
+        self.FApathLabel = QLabel(self.mainFrame)
+        self.FApathLabel.setObjectName(u"FApathLabel")
+        self.FApathLabel.setGeometry(QRect(30, 290, 251, 21))
+        self.FApathLabel.setFont(font5)
+        self.pageSettingLabel_2 = QLabel(self.mainFrame)
+        self.pageSettingLabel_2.setObjectName(u"pageSettingLabel_2")
+        self.pageSettingLabel_2.setGeometry(QRect(50, 330, 241, 31))
+        self.pageSettingLabel_2.setFont(font1)
+        self.pageSettingLabel_2.setStyleSheet(u"QLabel{\n"
+"	color: rgb(255, 170, 255)\n"
+"}")
+        self.pageSettingLabel_2.setScaledContents(False)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -280,8 +310,7 @@ class Ui_MainWindow(object):
 "\n"
 "  1.\u70b9\u51fb\u4e0a\u4f20\u56fe\u7247\u6309\u952e\n"
 "\n"
-"  2.\u5728\u5f39\u51fa\u7684\u6d4f\u89c8\u6846\u4e2d\u6253\u5f00\n"
-"    \u9700\u8981\u68c0\u7d22\u7684\u56fe\u7247\n"
+"  2.\u5728\u5f39\u51fa\u7684\u6d4f\u89c8\u6846\u4e2d\u6253\u5f00\u9700\u8981\u68c0\u7d22\u7684\u56fe\u7247\n"
 "\n"
 "  3.\u70b9\u51fb\u68c0\u7d22\u8fdb\u884c\u68c0\u7d22", None))
         self.resultLabel_1.setText("")
@@ -303,10 +332,14 @@ class Ui_MainWindow(object):
         self.creditLabel.setText(QCoreApplication.translate("MainWindow", u"SUSTech", None))
         self.pathLabel.setText(QCoreApplication.translate("MainWindow", u"C:/Users/Administrator/Desktop", None))
         self.pageSettingLabel.setText(QCoreApplication.translate("MainWindow", u"\u8bbe\u7f6e\u68c0\u7d22\u9875\u6570\uff1a", None))
+        self.FAuploadLabel.setText("")
+        self.FAuploadButton.setText(QCoreApplication.translate("MainWindow", u"\u8865\u5145\u4e0a\u4f20FA\u56fe\u7247", None))
+        self.FApathLabel.setText(QCoreApplication.translate("MainWindow", u"C:/Users/Administrator/Desktop", None))
+        self.pageSettingLabel_2.setText(QCoreApplication.translate("MainWindow", u"\u5c06\u63d0\u9ad8\u8bca\u65ad\u51c6\u786e\u5ea6\u54e6", None))
     # retranslateUi
-
 #-----------------------------------------------------------------------------------------------------------------------
         self.uploadButton.clicked.connect(self.upload)
+        self.FAuploadButton.clicked.connect(self.FAupload)
         self.quitButton.clicked.connect(self.quit)
         self.searchButton.clicked.connect(self.search)
         self.nextPageButton.clicked.connect(self.nextPage)
@@ -420,7 +453,6 @@ class Ui_MainWindow(object):
         self.nextPageButton.setEnabled(True)
         self.lastPageButton.setEnabled(True)
 
-
     def upload(self):
         openfile_name = QFileDialog.getOpenFileName(filter="Images (*.png *.jpg)")
         if openfile_name[0]:
@@ -432,7 +464,18 @@ class Ui_MainWindow(object):
             self.targetPath = openfile_name[0]
             self.searchButton.setEnabled(True)
 
-    def quit(self):
+    def FAupload(self):
+        openfile_name = QFileDialog.getOpenFileName(filter="Images (*.png *.jpg)")
+        if openfile_name[0]:
+            if len(openfile_name[0]) < 33:
+                self.setText(self.FApathLabel, openfile_name[0])
+            else:
+                self.setText(self.FApathLabel, openfile_name[0][:30] + '...')
+            self.FAuploadLabel.setPixmap(QPixmap(openfile_name[0]))
+            self.FAtargetPath = openfile_name[0]
+
+    @staticmethod
+    def quit():
         os._exit(0)
 
     @staticmethod

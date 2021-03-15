@@ -50,6 +50,7 @@ class search:
 
         self.feature_db = []
         self.name = []
+        self.label=[]
         tstart = time.time()
         self.model = ResNet(Bottleneck, [3, 4, 23, 3], att_type="CBAM")
         self.model.load_state_dict(torch.load(
@@ -60,14 +61,15 @@ class search:
         with open(feature) as f:
             f_csv = csv.reader(f)
             for row in f_csv:
-                self.feature_db.append(row[:-1])
+                self.feature_db.append(row[:-2])
                 self.name.append(row[-1])
+                self.label.append(row[-2])
 
-        self.cpu_index = faiss.IndexFlatL2(1000)
+        self.cpu_index = faiss.IndexFlatL2(2048)
         # self.cpu_index = faiss.index_cpu_to_all_gpus(
         #     cpu_index)  # make all gpu usable
         # add data(must be float32) to index
-        self.feature_db=np.array(self.feature_db, dtype=np.float32)[:,:1000]
+        self.feature_db=np.array(self.feature_db, dtype=np.float32)[:,:2048]
         self.cpu_index.add(np.array(self.feature_db, dtype=np.float32))
         elapsed = time.time() - tstart
         print('Completed buliding index in %d seconds' % int(elapsed))

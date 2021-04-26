@@ -11,11 +11,11 @@ class Database:
         self.conn.close()
     
     def query(self,filename):
-        self.cur.execute('select * from patient where filename=%s',('IM_091715.png',))
+        self.cur.execute('select * from patient where filename=%s',(filename,))
         return self.cur.fetchall()    
 
-database=Database("postgres","postgres","123456","10.17.12.166","5432")
-print(database.query("IM_091715.png"))
-database.close()
+# database=Database("postgres","postgres","123456","10.17.12.166","5432")
+# print(database.query("IM_091715.png"))
+# database.close()
 
 
